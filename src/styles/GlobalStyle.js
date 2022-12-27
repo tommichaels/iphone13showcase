@@ -30,6 +30,7 @@ body{
     font-family: "Source Sans Pro", sans-serif;
     overflow-x: hidden;
 }
+
 :root{
     // Fonts As per the type scale generator => https://material-io.cn/inline-tools/typography/
  --fontBig: 7em; //88 px
@@ -41,6 +42,7 @@ body{
  --fontsm: 1.125em; //18 px
  --fontxs: 1em; //16 px
  --fontxxs: 0.75em; //12 px
+
   // Colors
   --dark: #000000;
   --grey: #666666;
@@ -49,6 +51,7 @@ body{
   --white: #ffffff;
   --blue: #0071e3;
   --blueRgba:"0, 113, 227";
+  
   //fonts
   --fontL: "Source Sans Pro light";
   --fontR: "Source Sans Pro";

@@ -9,7 +9,7 @@ function App() {
       <GlobalStyle />
       <Quote />
       <HeroSection />
-      <PhoneModel />
+      {/* <PhoneModel /> */}
     </div>
   );
 }

@@ -2,6 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { Canvas } from "@react-three/fiber";
 import { AdaptiveDpr, AdaptiveEvents, Environment } from "@react-three/drei";
+
+// import { AdaptiveDpr } from "@react-three/drei";
+// import { AdaptiveEvents } from "@react-three/drei";
+// import { Environment } from "@react-three/drei";
+
 import Model from "../components/Scene";
 import { Suspense } from "react";
 

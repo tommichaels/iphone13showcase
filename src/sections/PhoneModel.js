@@ -1,14 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { Canvas } from "@react-three/fiber";
-import { AdaptiveDpr, AdaptiveEvents, Environment } from "@react-three/drei";
-
-// import { AdaptiveDpr } from "@react-three/drei";
-// import { AdaptiveEvents } from "@react-three/drei";
-// import { Environment } from "@react-three/drei";
-
+import { AdaptiveDpr, AdaptiveEvents, Environment, OrbitControls } from "@react-three/drei";
 import Model from "../components/Scene";
 import { Suspense } from "react";
+import { MeshStandardMaterial } from "three";
 
 const Container = styled.div`
   width: 100vw;
@@ -23,15 +19,13 @@ const Container = styled.div`
 const PhoneModel = () => {
   return (
     <Container id="phone-model">
-      <Canvas camera={{ fov: 14 }}>
-        <ambientLight intensity={1.25} />
-        <directionalLight intensity={0.4} />
-        <Suspense fallback={null}>
-          <Model />
-        </Suspense>
-        <Environment preset="night" />
-        <AdaptiveDpr pixelated />
-        <AdaptiveEvents />
+      <Canvas>
+      <ambientLight intensity={1.25} />
+        <mesh>
+          <boxGeometry />
+          {/* <MeshStandardMaterial /> */}
+        </mesh>
+         <OrbitControls />
       </Canvas>
     </Container>
   );
@@ -39,18 +33,16 @@ const PhoneModel = () => {
 
 export default PhoneModel;
 
-// import React from 'react';
-// import styled from "styled-components";
-// import { Canvas } from "@react-three/fiber";
-// import { AdaptiveDpr, AdaptiveEvents, Environment } from "@react-three/drei";
-
-
-// const PhoneModel = () => {
-//   return (
-//     <div>
-//       PhoneModel
-//     </div>
-//   )
-// }
-
-// export default PhoneModel
+{/* <Container id="phone-model">
+<Canvas camera={{ fov: 14 }}>
+  <ambientLight intensity={1.25} />
+  <directionalLight intensity={0.4} />
+  <Suspense fallback={null}>
+    <Model />
+  </Suspense>
+  <Environment preset="night" />
+  <AdaptiveDpr pixelated />
+  <AdaptiveEvents />
+</Canvas>
+</Container> */}
+  {/* <OrbitControls /> */}

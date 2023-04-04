@@ -159,14 +159,14 @@ const DisplaySection = () => {
         Immersive <br /> Display
       </MainTitle>
       <TextBlockRight>
-        <Title>Super Ratine XDR Display</Title>
+        <Title>Super Ratina XDR Display</Title>
         <Text>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           Necessitatibus dignissimos ipsam.
         </Text>
       </TextBlockRight>
       <TextBlockLeft ref={container}>
-        <Title>Big is better</Title>
+        <Title>Bigger is better</Title>
         <Text>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           Necessitatibus dignissimos ipsam.

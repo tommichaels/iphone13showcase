@@ -101,7 +101,7 @@ const HeroSection = () => {
       <VideoContainer>
         <video src={backgroundVideo} type="video/mp4" autoPlay muted loop />
       </VideoContainer>
-      <Title>iPhone 14 Pro Max</Title>
+      <Title>iPhone 13 Pro Max</Title>
       <TextContainer>
         <span>So.Cold.</span>
         <span>So.Bold.</span>

@@ -8,6 +8,7 @@ title: Apple iPhone 13 Pro Max
 
 import React, { useRef, useLayoutEffect } from "react";
 import { useGLTF } from "@react-three/drei";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import gsap from "gsap";
 import { useThree } from "@react-three/fiber";
 
